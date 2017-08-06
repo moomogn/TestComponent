@@ -1,0 +1,6 @@
+ext{
+    flag=[
+        //module是否是作为模块，true的时候是，false的时候可以独立运行
+        isModule : "true",
+    ]
+}
