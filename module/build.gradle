@@ -1,6 +1,8 @@
-apply plugin: 'com.android.library'
-//apply plugin: 'com.android.application'
-
+if(rootProject.ext.flag["isModule"].toBoolean()) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
